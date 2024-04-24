@@ -1,0 +1,1427 @@
+#svgSupport {
+    width: 650px;
+    z-index: 9999;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    top: 100px
+}
+
+#svgSupport img {
+    position: absolute
+}
+
+.diode {
+    fill: #000;
+    stroke: #000
+}
+
+#master_buttons,
+#breaker_buttons,
+#switch_buttons {
+    display: none
+}
+
+#electricbody h1,
+#electricbody p {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.ui_breaker_buttons {
+    position: relative !important;
+    top: -220px !important;
+    left: 224px !important
+}
+
+.ui_switch_buttons {
+    position: relative !important;
+    top: -426px !important;
+    left: -196px !important
+}
+
+.ui_master_buttons {
+    position: relative !important;
+    top: 10px !important;
+    left: -416px !important
+}
+
+.ui-dialog {
+    margin: 0 auto
+}
+
+body {
+    background-image: url(elecbg.a3a3d2e7.jpg);
+    margin: 0 auto;
+    font-family: arial;
+    position: relative
+}
+
+#C172S {
+    fill: none;
+    stroke: #000
+}
+
+h1 {
+    cursor: default
+}
+
+div#header {
+    height: 55px;
+    width: 1024px;
+    margin: 0 auto;
+    position: relative
+}
+
+#header_left {
+    width: 440px;
+    position: relative
+}
+
+#aerospaceLogo img {
+    width: 188px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 9px
+}
+
+#header_left h1 {
+    color: #fff;
+    letter-spacing: .4px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 11px;
+    right: 10px
+}
+
+.header_button {
+    float: left;
+    height: 49px;
+    background-color: #000;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-radius: 0 0 12px 12px
+}
+
+#header_power_status {
+    width: 183px;
+    margin-left: 6px
+}
+
+#header_master,
+#header_breaker,
+#header_switches {
+    width: 84px;
+    cursor: pointer;
+    margin-left: 6px
+}
+
+#header_menu {
+    width: 63px;
+    float: right;
+    cursor: pointer
+}
+
+#menu_cog {
+    margin-top: 3px;
+    margin-left: 18px
+}
+
+#menu_down {
+    height: auto;
+    position: absolute;
+    bottom: 13px
+}
+
+.powerStatus p {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 110px;
+    margin-top: 4px;
+    font-size: 12px;
+    position: absolute
+}
+
+#header_engine {
+    width: 110px;
+    cursor: pointer;
+    margin-left: 6px
+}
+
+#sparkplug {
+    margin-top: 3px;
+    margin-left: 1px;
+    position: absolute
+}
+
+#header_epu {
+    width: 110px;
+    cursor: pointer;
+    margin-left: 6px
+}
+
+#epuIcon {
+    margin-top: 3px;
+    margin-left: 3px;
+    position: absolute
+}
+
+#epuIconRight {
+    position: absolute;
+    top: 0;
+    left: 6px
+}
+
+#header_power_status hr {
+    border: 1px solid #333
+}
+
+#status_engine {
+    cursor: pointer;
+    width: 64px;
+    margin: 11px 0 0 32px
+}
+
+#status_epu {
+    cursor: pointer;
+    margin-top: 11px;
+    margin-left: 3px
+}
+
+.button_pop {
+    height: auto;
+    width: 13px;
+    margin-top: 1px;
+    margin-left: 2px;
+    position: absolute
+}
+
+#button_widget_master {
+    margin-top: 1px;
+    margin-left: 33px
+}
+
+#header_breaker p {
+    margin-left: 7px
+}
+
+.button_widget_text {
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: -1px;
+    margin-left: 16px;
+    font-size: 12px;
+    position: absolute;
+    bottom: -5px
+}
+
+#header_switches p {
+    margin-left: 8px
+}
+
+#button_widget_menu {
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: -1px;
+    margin-left: 8px;
+    font-size: 11px;
+    position: absolute;
+    bottom: -2px
+}
+
+#button_widget_breaker {
+    margin-top: 4px;
+    margin-left: 32px
+}
+
+#button_widget_switch {
+    margin-top: 4px;
+    margin-left: 35px
+}
+
+#mainwrapper {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden
+}
+
+#main_svg_wrapper {
+    z-index: 10;
+    background-color: #000;
+    border: 1px solid #999;
+    border-radius: 14px;
+    padding: 6px 8px;
+    position: relative
+}
+
+#svgwrapper {
+    min-height: 532px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: -2px;
+    padding: 2px
+}
+
+.hide {
+    display: none
+}
+
+#eis_right g rect {
+    fill: none
+}
+
+#eis_left rect {
+    stroke: #000
+}
+
+#standby rect {
+    fill: #e2e2e2;
+    stroke: #000
+}
+
+#arm-off-test {
+    stroke: #000
+}
+
+#key {
+    fill: #fff
+}
+
+text {
+    fill: #000;
+    stroke: none;
+    font-family: arial, helvetica, sans-serif
+}
+
+#pdm polygon:hover {
+    stroke: orange;
+    cursor: pointer
+}
+
+#starter ellipse,
+#starter path,
+#alternator ellipse,
+#alternator path {
+    fill: #fff
+}
+
+.standby_power {
+    stroke: #099;
+    fill: #099
+}
+
+.battery_power {
+    stroke: #f90;
+    fill: #f90
+}
+
+.external_power {
+    stroke: #36c;
+    fill: #36c
+}
+
+.alternator_power {
+    stroke: #f33;
+    fill: #f33
+}
+
+.no_power {
+    stroke: #000;
+    fill: #000
+}
+
+.engine_status_shutdown {
+    color: #999
+}
+
+.engine_status_running {
+    color: red
+}
+
+.epu_disconnected {
+    color: #999
+}
+
+.epu_connected {
+    color: #add8e6
+}
+
+#labels span {
+    letter-spacing: .4px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: default;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    line-height: 11px;
+    position: absolute
+}
+
+html body#electricbody div#mainwrapper svg g#acu g#acu_ground rect {
+    fill: none
+}
+
+.label_highlight {
+    border: 1px solid orange
+}
+
+.rotate_minus {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg)
+}
+
+.rotate_plus {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg)
+}
+
+.menu_container {
+    height: 200px;
+    width: 500px;
+    color: #fff;
+    z-index: 9999;
+    background-color: #000;
+    border: 1px solid #999;
+    border-radius: 12px;
+    position: absolute;
+    top: -202px;
+    right: 0
+}
+
+.asn_logo {
+    margin-bottom: 12px;
+    position: relative;
+    top: 10px
+}
+
+.menu_credits {
+    height: 200px;
+    text-align: center;
+    width: 254px;
+    border-right: 1px solid #999;
+    font-size: 12px;
+    line-height: 15px;
+    position: absolute
+}
+
+.menu_container a {
+    color: #add8e6;
+    text-decoration: none
+}
+
+.menu_container a:hover {
+    text-decoration: underline
+}
+
+#disclaimer {
+    width: 194px;
+    margin-right: 20px;
+    position: absolute;
+    bottom: 70px;
+    right: 0
+}
+
+#disclaimer p {
+    text-align: center;
+    font-size: 12px
+}
+
+#mfd {
+    height: 165px;
+    width: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: #000;
+    border: 1px solid #999;
+    border-radius: 12px 0 0 12px;
+    position: absolute;
+    bottom: 55px;
+    right: 0
+}
+
+#mfd_text {
+    color: #fff;
+    width: 143px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 56px;
+    right: -53px
+}
+
+#mfd_button {
+    width: 7px;
+    position: absolute;
+    bottom: 4px;
+    left: 15px
+}
+
+#mfd_img_overlay {
+    height: 465px;
+    width: 110px;
+    background-color: #000;
+    position: absolute;
+    top: 20px;
+    left: 112px
+}
+
+#mfd_img {
+    z-index: 2000
+}
+
+#mfd_electrical_info {
+    z-index: 1000;
+    position: absolute;
+    right: -222px
+}
+
+#mfd_electrical_info_text {
+    color: #fff;
+    letter-spacing: -.8px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80px;
+    letter-spacing: -1px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 105px;
+    left: 116px
+}
+
+#mfd_electrical_info_text p {
+    cursor: default
+}
+
+#mfd_electrical_info_text_electrical {
+    position: absolute;
+    left: 12px
+}
+
+#mfd_electrical_info_text_bus {
+    position: absolute;
+    left: 30px
+}
+
+#mfd_electrical_info_text_volts {
+    position: absolute;
+    left: 25px
+}
+
+#mfd_electrical_info_text_batt {
+    position: absolute;
+    left: 29px
+}
+
+#mfd_electrical_info_text_amps {
+    position: absolute;
+    left: 27px
+}
+
+#mfd_electrical_info_text>br {
+    margin-top: 1px;
+    margin-bottom: 2px
+}
+
+#pfd {
+    height: 165px;
+    width: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: #000;
+    border: 1px solid #999;
+    border-radius: 0 12px 12px 0;
+    position: absolute;
+    bottom: 55px;
+    left: 0
+}
+
+#pfd_text {
+    color: #fff;
+    width: 143px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 49px;
+    left: -53px
+}
+
+#pfd_button {
+    width: 7px;
+    position: absolute;
+    bottom: 4px;
+    right: 16px
+}
+
+#pfd_img_overlay {
+    height: 461px;
+    width: 116px;
+    z-index: 2000;
+    background-color: #000;
+    position: absolute;
+    top: 26px
+}
+
+#pfd_info {
+    z-index: 1000;
+    position: absolute;
+    left: -226px
+}
+
+#pfd_annunciators {
+    text-transform: uppercase;
+    width: 71px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-color: #000;
+    border: 1px solid silver;
+    padding-left: 10px;
+    padding-right: 9px;
+    font-family: arial;
+    font-size: 9px;
+    list-style-type: none;
+    position: absolute;
+    top: 253px;
+    left: 19px
+}
+
+#sound_wrapper {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #000;
+    border: 1px solid silver;
+    border-radius: 12px 0 0 12px;
+    position: absolute;
+    top: 109px;
+    right: 0
+}
+
+.sound_on {
+    display: none
+}
+
+#soundIcon {
+    margin-top: 5px;
+    margin-left: 9px
+}
+
+#annunciators_low_volts,
+#annunciators_oil_pressure {
+    color: red
+}
+
+#annunciators_stby_batt,
+#annunciators_low_vacuum {
+    color: #ff0
+}
+
+.text_align_left {
+    text-align: left
+}
+
+.text_align_right {
+    text-align: right
+}
+
+.float_right {
+    float: right
+}
+
+.float_left {
+    float: left
+}
+
+.absolute_left {
+    position: absolute;
+    left: 0
+}
+
+.absolute_right {
+    position: absolute;
+    right: 0
+}
+
+g#rollover rect:hover,
+g#rollover polygon:hover {
+    stroke: #937;
+    cursor: pointer
+}
+
+g#rollover rect,
+g#rollover polygon {
+    fill: #000;
+    fill-opacity: 0;
+    stroke: none
+}
+
+#feeder_b span {
+    height: 31px;
+    width: 40px;
+    position: absolute;
+    top: 207px;
+    left: 299px
+}
+
+#feeder_b span:hover {
+    border: 1px solid #09f
+}
+
+#feeder_a span {
+    height: 31px;
+    width: 40px;
+    position: absolute;
+    top: 242px;
+    left: 299px
+}
+
+#feeder_a span:hover {
+    border: 1px solid #09f
+}
+
+#rollover_battery span {
+    height: 57px;
+    width: 41px;
+    top: 436px;
+    left: 43px
+}
+
+#rollover_standby_battery span {
+    height: 58px;
+    width: 45px;
+    top: 120px;
+    left: 803px
+}
+
+#rollover_alternator span {
+    height: 50px;
+    width: 50px;
+    top: 81px;
+    left: 42px
+}
+
+#rollover_starter span {
+    height: 67px;
+    width: 87px;
+    top: 252px;
+    left: 25px
+}
+
+#rollover_ignition_switch span {
+    height: 45px;
+    width: 51px;
+    top: 274px;
+    left: 359px
+}
+
+#rollover_alt_field span {
+    height: 30px;
+    width: 35px;
+    top: 226px;
+    left: 479px
+}
+
+#rollover_warn span {
+    height: 30px;
+    width: 35px;
+    top: 265px;
+    left: 534px
+}
+
+#widget_bus span {
+    position: absolute
+}
+
+#rollover_elec_bus1 span {
+    height: 218px;
+    width: 18px;
+    top: 7px;
+    left: 427px
+}
+
+#rollover_elec_bus2 span {
+    height: 229px;
+    width: 18px;
+    top: 293px;
+    left: 427px
+}
+
+#rollover_x_feed_bus span {
+    height: 119px;
+    width: 19px;
+    top: 199px;
+    left: 514px
+}
+
+#rollover_ess_bus span {
+    height: 185px;
+    width: 19px;
+    top: 161px;
+    left: 632px
+}
+
+#rollover_avn_bus2 span {
+    height: 153px;
+    width: 18px;
+    top: 367px;
+    left: 686px
+}
+
+#rollover_avn_bus1 span {
+    height: 103px;
+    width: 18px;
+    top: 7px;
+    left: 686px
+}
+
+#rollover_eis_left span {
+    height: 46px;
+    width: 50px;
+    top: 175px;
+    left: 25px
+}
+
+#rollover_acu span {
+    height: 103px;
+    width: 110px;
+    top: 20px;
+    left: 122px
+}
+
+#rollover_pdm {
+    height: 47px;
+    width: 78px;
+    position: absolute;
+    top: 12px;
+    left: 239px
+}
+
+#color_key {
+    height: 100px;
+    width: 200px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    position: absolute;
+    top: 1px;
+    right: 1px
+}
+
+#color_key_innerwrap {
+    margin-top: 17px;
+    margin-left: 10px
+}
+
+#color_key p {
+    margin-left: 24px;
+    font-size: 12px;
+    line-height: 9px
+}
+
+#toggle_names {
+    position: absolute;
+    top: 10px;
+    right: 13px
+}
+
+#color_key div span {
+    height: 9px;
+    width: 14px;
+    border: 1px solid #000;
+    position: absolute
+}
+
+#color_key_battery span {
+    background-color: #f90
+}
+
+#color_key_alternator span {
+    background-color: #f33
+}
+
+#color_key_standby_battery span {
+    background-color: #099
+}
+
+#color_key_epu span {
+    background-color: #36c
+}
+
+#buttonbox {
+    width: 900px;
+    height: 100px;
+    margin: 20px auto 0;
+    display: block;
+    position: absolute
+}
+
+#buttonbox div {
+    float: right
+}
+
+#buttonbox div span {
+    color: #fff;
+    font-size: 11px;
+    position: absolute;
+    top: 37px
+}
+
+#master_buttons {
+    width: 181px;
+    height: 195px;
+    background: url(masterPanelBg.388dfb9d.jpg) no-repeat;
+    overflow: hidden
+}
+
+.master_switch_on {
+    height: 51px;
+    width: 14px;
+    cursor: pointer;
+    background: url(masterOn.9cd70b6b.jpg) no-repeat
+}
+
+.master_switch_off {
+    height: 51px;
+    width: 14px;
+    cursor: pointer;
+    background: url(masterOff.2a68929d.jpg) no-repeat
+}
+
+.avionics_switch_on {
+    height: 51px;
+    width: 14px;
+    cursor: pointer;
+    background: url(avionicsOn.b5b2a0df.jpg) no-repeat
+}
+
+.avionics_switch_off {
+    height: 51px;
+    width: 14px;
+    cursor: pointer;
+    background: url(avionicsOff.2f30e452.jpg) no-repeat
+}
+
+#master_avionics2_switch {
+    position: absolute;
+    top: 14px;
+    left: 23px
+}
+
+#master_avionics1_switch {
+    position: absolute;
+    top: 14px;
+    left: 8px
+}
+
+#master_battery_switch {
+    position: absolute;
+    top: 14px;
+    left: 23px
+}
+
+#master_alternator_switch {
+    position: absolute;
+    top: 14px;
+    left: 8px
+}
+
+#wrapper_master_switch {
+    position: absolute;
+    top: 108px;
+    left: 28px
+}
+
+#wrapper_avionics_switch {
+    position: absolute;
+    top: 108px;
+    left: 104px
+}
+
+#switch_buttons div {
+    float: left;
+    margin-right: 10px
+}
+
+#switch_buttons div span {
+    display: none
+}
+
+#switch_buttons {
+    width: 220px;
+    height: auto;
+    background-image: url(switchesPanelBg.b94a65fc.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden
+}
+
+#switch_buttons_top {
+    width: 200px;
+    position: absolute;
+    top: 29px;
+    left: 5px
+}
+
+#switch_buttons_bottom {
+    width: 200px;
+    position: absolute;
+    top: 107px;
+    left: 5px
+}
+
+#breaker_buttons {
+    width: 565px;
+    height: auto;
+    background-image: url(breakerrPanelBg.157f99a8.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden
+}
+
+#switch_pulselite {
+    cursor: pointer;
+    position: absolute;
+    top: 118px;
+    left: 132px
+}
+
+.pulselite_off {
+    width: 25px;
+    height: 47px;
+    background-image: url(pulseOff.3173f79a.png)
+}
+
+.pulselite_on {
+    height: 40px;
+    width: 27px;
+    background-image: url(pulseOn.afc1078b.png);
+    margin-top: -21px
+}
+
+#breaker_buttons div {
+    position: absolute
+}
+
+#breaker_buttons_x_feed_bus {
+    top: 20px
+}
+
+#breaker_x_feed_alt_field {
+    left: 5px
+}
+
+#breaker_x_feed_warn {
+    left: 42px
+}
+
+#breaker_buttons_elec_bus_1 {
+    top: 72px
+}
+
+#breaker_fuel_pump {
+    left: 5px
+}
+
+#breaker_bcn_lt {
+    left: 42px
+}
+
+#breaker_land_lt {
+    left: 79px
+}
+
+#breaker_cabin_lts_pwr {
+    left: 117px
+}
+
+#breaker_flaps {
+    left: 157px
+}
+
+#breaker_avn_1 {
+    left: 195px
+}
+
+#breaker_buttons_elec_bus_2 {
+    top: 125px
+}
+
+#breaker_pitot_heat {
+    left: 5px
+}
+
+#breaker_nav_lts {
+    left: 42px
+}
+
+#breaker_taxi_lt {
+    left: 79px
+}
+
+#breaker_strobe_lts {
+    left: 117px
+}
+
+#breaker_panel_lts {
+    left: 157px
+}
+
+#breaker_avn_2 {
+    left: 195px
+}
+
+#breaker_button_right {
+    left: 290px
+}
+
+#breaker_buttons_ess_bus {
+    top: 14px;
+    left: -5px
+}
+
+#breaker_ess_pfd {
+    left: 3px
+}
+
+#breaker_ess_adc_arhs {
+    left: 41px
+}
+
+#breaker_ess_nav_1_eng {
+    left: 79px
+}
+
+#breaker_ess_comm_1 {
+    left: 117px
+}
+
+#breaker_ess_stdby_ind_lts {
+    left: 157px
+}
+
+#breaker_ess_stdby_batt {
+    left: 195px
+}
+
+#breaker_buttons_avn_1_bus {
+    top: 67px;
+    left: -5px
+}
+
+#breaker_avn_1_pfd {
+    left: 2px
+}
+
+#breaker_avn_1_adc_arhs {
+    left: 41px
+}
+
+#breaker_avn_1_nav_1_eng {
+    left: 79px
+}
+
+#breaker_buttons_avn_2_bus {
+    top: 121px;
+    left: -6px
+}
+
+#breaker_avn_2_mfd {
+    left: 3px
+}
+
+#breaker_avn_2_xpndr {
+    left: 42px
+}
+
+#breaker_avn_2_nav_2 {
+    left: 79px
+}
+
+#breaker_avn_2_comm_2 {
+    left: 117px
+}
+
+#breaker_avn_2_audio {
+    left: 157px
+}
+
+.breaker5 {
+    cursor: pointer;
+    height: 44px;
+    width: 40px;
+    background-image: url(5in.1060f831.png);
+    background-repeat: no-repeat;
+    padding-right: 7px
+}
+
+.breaker5_open {
+    width: 40px;
+    height: 44px;
+    cursor: pointer;
+    background-image: url(5out.58a95ad0.png);
+    background-repeat: no-repeat;
+    margin-left: 1px
+}
+
+.breaker10 {
+    cursor: pointer;
+    height: 44px;
+    width: 40px;
+    background-image: url(10in.034e5472.png);
+    background-repeat: no-repeat;
+    padding-right: 7px
+}
+
+.breaker10_open {
+    cursor: pointer;
+    height: 44px;
+    width: 40px;
+    background-image: url(10out.8b04283c.png);
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-left: -6px
+}
+
+.breaker15 {
+    cursor: pointer;
+    height: 44px;
+    width: 40px;
+    background-image: url(15in.ce262c08.png);
+    background-repeat: no-repeat;
+    padding-right: 7px
+}
+
+.breaker15_open {
+    cursor: pointer;
+    height: 55px;
+    width: 40px;
+    background-image: url(15out.238988f4.png);
+    background-repeat: no-repeat;
+    margin-top: -7px;
+    margin-left: -1px
+}
+
+.breaker20 {
+    cursor: pointer;
+    height: 44px;
+    width: 40px;
+    background-image: url(20in.539e597c.png);
+    background-repeat: no-repeat;
+    margin-left: -1px;
+    padding-right: 7px
+}
+
+.breaker20_open {
+    cursor: pointer;
+    height: 46px;
+    width: 40px;
+    background-image: url(20out.b9d20b56.png);
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-left: -4px
+}
+
+.breaker:hover {
+    border: 1px solid #9cf;
+    margin-top: -1px;
+    margin-left: -1px
+}
+
+.switch {
+    height: 45px;
+    width: 28px;
+    cursor: pointer;
+    background: url(whiteSwitchOff.c4c9fb9a.png) no-repeat;
+    margin-top: 10px
+}
+
+.switch_open {
+    height: 45px;
+    width: 28px;
+    cursor: pointer;
+    background: url(whiteSwitchOn.a17d8a59.png) no-repeat;
+    margin-top: 0
+}
+
+#standbybattery_wrapper {
+    float: right;
+    height: 70px;
+    width: 35px;
+    position: absolute;
+    top: 9px;
+    left: 54px
+}
+
+.standbybattery {
+    cursor: pointer;
+    height: 30px;
+    width: 31px;
+    z-index: 0;
+    background-image: url(stbyBattOff.f38789b5.png);
+    background-repeat: no-repeat;
+    margin-top: 23px;
+    margin-right: 5px;
+    position: absolute
+}
+
+.standbybattery_armed {
+    cursor: pointer;
+    height: 33px;
+    width: 32px;
+    z-index: 0;
+    background-image: url(stbyBattArm.74f6b2ed.png);
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-right: 5px;
+    position: absolute
+}
+
+div.standbybattery_arm {
+    height: 32px;
+    width: 25px;
+    position: absolute
+}
+
+div.standbybattery_arm:hover {
+    cursor: pointer;
+    float: right;
+    height: 32px;
+    width: 32px;
+    z-index: 1;
+    background: url(uparrow.92ba2b09.png) 9px 0 no-repeat;
+    border-top: 2px solid #4bbea3;
+    border-left: 2px solid #4bbea3;
+    border-right: 2px solid #4bbea3;
+    border-radius: 5px;
+    position: absolute
+}
+
+div.standbybattery_test {
+    cursor: pointer;
+    float: right;
+    height: 33px;
+    width: 35px;
+    margin-top: 30px;
+    position: absolute
+}
+
+div.standbybattery_test:hover {
+    cursor: pointer;
+    float: right;
+    height: 32px;
+    width: 32px;
+    background: url(downarrow.153fa96b.png) 9px 10px no-repeat;
+    border-bottom: 2px solid #4bbea3;
+    border-left: 2px solid #4bbea3;
+    border-right: 2px solid #4bbea3;
+    border-radius: 5px;
+    position: absolute
+}
+
+.standbybattery_testing {
+    height: 41px;
+    width: 31px;
+    z-index: 0;
+    float: right;
+    background: url(stbyBattTest.1210f36f.png) no-repeat;
+    margin-top: 23px;
+    margin-right: 5px
+}
+
+.standby_test_led_on {
+    height: 19px;
+    width: 20px;
+    background: url(testLightOn.9c3ca7dc.png) no-repeat;
+    position: absolute;
+    top: 35px;
+    left: 99px
+}
+
+.feeder_open {
+    stroke: #000 !important;
+    fill: #000 !important
+}
+
+#dialog_text {
+    display: none
+}
+
+.ui-dialog {
+    box-shadow: 5px 5px 8px #333
+}
+
+#master_buttons {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+#arrow_arm,
+#arrow_test,
+#stby_batt_arm_connector,
+#testled_arrows {
+    stroke: #000
+}
+
+#ess_to_stby_wire {
+    fill: none
+}
+
+circle,
+#feeder_a_line,
+#feeder_b_line {
+    fill: none !important
+}
+
+#hitboxes {
+    position: absolute;
+    top: 6px;
+    left: 8px
+}
+
+#hitboxes div {
+    z-index: 0;
+    border: 1px solid red;
+    position: absolute
+}
+
+#switch_pitot_heat {
+    width: 29px;
+    height: 44px;
+    background: url(greenSwitchOff.45354b95.png) no-repeat;
+    margin-left: -1px
+}
+
+div#switch_pitot_heat.switch_open {
+    width: 29px;
+    height: 44px;
+    background: url(greenSwitchOn.6c891819.png) no-repeat;
+    margin-left: -1px
+}
+
+body {
+    -webkit-tap-highlight-color: #0000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-select: none
+}
+
+html {
+    -moz-user-select: element
+}
+
+/*# sourceMappingURL=index.a651758e.css.map */
