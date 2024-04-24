@@ -23,10 +23,12 @@
     </div>
     <div id="header">
         <div class="header_button" id="header_left">
-            <div id="aerospaceLogo">
-                <img src="lgo-und.a4471031.png" alt="UND Aerospace logo">
-            </div>
-            <h1 style="color: red;">Test web cho em vợ</h1>
+            <a href="https://www.facebook.com/CallmeSu.pls" target="_blank">
+                <div id="aerospaceLogo">
+                    <img src="lgo-und.a4471031.png" alt="UND Aerospace logo">
+                </div>
+                <h1 style="color: red;">Test web cho em vợ</h1>
+            </a>
         </div>
         <div id="header_engine" class="header_button powerStatus">
             <div id="sparkplug">
@@ -815,37 +817,34 @@
             font-weight: bold;
         }
     </style>
-    </head>
-    
-    <body>
-    
-        <div id="customAlert" class="modal">
-            <div id="customAlertContent" class="modal-content">
-                <p>Xin chào bạn. Đây là code của PMQ, nếu có thắc mắc vui lòng nhắn tin cho tôi!</p>
-                <p>Xoá thông báo này ở dòng cuối cùng của file index.html</p>
-                <p id="countdown">Sẽ tắt thông báo sau: 7 giây</p>
-            </div>
+
+    <div id="customAlert" class="modal">
+        <div id="customAlertContent" class="modal-content">
+            <p>Xin chào bạn. Đây là code của PMQ, nếu có thắc mắc vui lòng nhắn tin cho tôi!</p>
+            <p>Xoá thông báo này ở dòng cuối cùng của file index.html</p>
+            <p id="countdown">Sẽ tắt thông báo sau: 7 giây</p>
         </div>
-    
-        <script>
-            window.onload = function () {
-                var modal = document.getElementById("customAlert");
-                var countdownElement = document.getElementById("countdown");
-                var countdownValue = 7;
+    </div>
+        
+    <script>
+        window.onload = function () {
+            var modal = document.getElementById("customAlert");
+            var countdownElement = document.getElementById("countdown");
+            var countdownValue = 7;
 
-                modal.style.display = "block";
+            modal.style.display = "block";
 
-                var countdownInterval = setInterval(function () {
-                    countdownValue--;
-                    countdownElement.innerText = 'Sẽ tắt thông báo sau: ' + countdownValue + ' giây';
+            var countdownInterval = setInterval(function () {
+                countdownValue--;
+                countdownElement.innerText = 'Sẽ tắt thông báo sau: ' + countdownValue + ' giây';
 
-                    if (countdownValue <= 0) {
-                        clearInterval(countdownInterval);
-                        modal.style.display = "none";
-                    }
-                }, 1000);
-            };
-        </script>
+                if (countdownValue <= 0) {
+                    clearInterval(countdownInterval);
+                    modal.style.display = "none";
+                }
+            },1000);
+        };
+    </script>
     <!-- Kết thúc xoá ở đây -->
 
 </body>
