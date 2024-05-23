@@ -33,4 +33,4 @@
         }
     }
 }(jQuery);
-//# sourceMappingURL=index.2d2a66bd.js.map
+//# sourceMappingURL=js/index.2d2a66bd.js.map

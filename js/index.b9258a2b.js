@@ -3200,4 +3200,4 @@
         return j
     }))
 }(window);
-//# sourceMappingURL=index.b9258a2b.js.map
+//# sourceMappingURL=js/index.b9258a2b.js.map

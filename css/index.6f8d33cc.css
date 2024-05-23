@@ -81,7 +81,7 @@
 
 .ui-widget-content {
     color: #333;
-    background: #eee url(ui-bg_highlight-soft_100_eeeeee_1x100.cbf70f1c.png) top repeat-x;
+    background: #eee url(/images/ui-bg_highlight-soft_100_eeeeee_1x100.cbf70f1c.png) top repeat-x;
     border: 1px solid #ddd
 }
 
@@ -91,7 +91,7 @@
 
 .ui-widget-header {
     color: #fff;
-    background: #085924 url(ui-bg_gloss-wave_35_085924_500x100.add636a1.png) 50% repeat-x;
+    background: #085924 url(/images/ui-bg_gloss-wave_35_085924_500x100.add636a1.png) 50% repeat-x;
     border: 1px solid #2d4937;
     font-weight: 700
 }
@@ -123,7 +123,7 @@
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
     color: #c77405;
-    background: #fdf5ce url(ui-bg_glass_100_fdf5ce_1x400.8f2f8226.png) 50% repeat-x;
+    background: #fdf5ce url(/images/ui-bg_glass_100_fdf5ce_1x400.8f2f8226.png) 50% repeat-x;
     border: 1px solid #fbcb09;
     font-weight: 700
 }
@@ -210,22 +210,22 @@
 .ui-icon {
     width: 16px;
     height: 16px;
-    background-image: url(ui-icons_222222_256x240.019bd450.png)
+    background-image: url(/images/ui-icons_222222_256x240.019bd450.png)
 }
 
 .ui-widget-content .ui-icon {
-    background-image: url(ui-icons_222222_256x240.019bd450.png)
+    background-image: url(/images/ui-icons_222222_256x240.019bd450.png)
 }
 
 .ui-widget-header .ui-icon {
-    background-image: url(ui-icons_ffffff_256x240.e6696eef.png)
+    background-image: url(/images/ui-icons_ffffff_256x240.e6696eef.png)
 }
 
 .ui-state-default .ui-icon,
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon,
 .ui-state-active .ui-icon {
-    background-image: url(ui-icons_ef8c08_256x240.372b9f28.png)
+    background-image: url(/images/ui-icons_ef8c08_256x240.372b9f28.png)
 }
 
 .ui-state-highlight .ui-icon {
@@ -1688,4 +1688,4 @@ button.ui-button::-moz-focus-inner {
     margin: -1px
 }
 
-/*# sourceMappingURL=index.6f8d33cc.css.map */
+/*# sourceMappingURL=css/index.6f8d33cc.css.map */

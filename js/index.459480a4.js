@@ -122,4 +122,4 @@
         }
     }
 }(jQuery);
-//# sourceMappingURL=index.459480a4.js.map
+//# sourceMappingURL=js/index.459480a4.js.map
