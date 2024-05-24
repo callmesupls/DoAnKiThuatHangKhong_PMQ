@@ -52,7 +52,7 @@
 }
 
 body {
-    background-image: url(/images/elecbg.a3a3d2e7.jpg);
+    background-image: url(../images/elecbg.a3a3d2e7.jpg);
     margin: 0 auto;
     font-family: arial;
     position: relative
@@ -884,7 +884,7 @@ g#rollover polygon {
 #master_buttons {
     width: 181px;
     height: 195px;
-    background: url(/images/masterPanelBg.388dfb9d.jpg) no-repeat;
+    background: url(../images/masterPanelBg.388dfb9d.jpg) no-repeat;
     overflow: hidden
 }
 
@@ -892,28 +892,28 @@ g#rollover polygon {
     height: 51px;
     width: 14px;
     cursor: pointer;
-    background: url(/images/masterOn.9cd70b6b.jpg) no-repeat
+    background: url(../images/masterOn.9cd70b6b.jpg) no-repeat
 }
 
 .master_switch_off {
     height: 51px;
     width: 14px;
     cursor: pointer;
-    background: url(/images/masterOff.2a68929d.jpg) no-repeat
+    background: url(../images/masterOff.2a68929d.jpg) no-repeat
 }
 
 .avionics_switch_on {
     height: 51px;
     width: 14px;
     cursor: pointer;
-    background: url(/images/avionicsOn.b5b2a0df.jpg) no-repeat
+    background: url(../images/avionicsOn.b5b2a0df.jpg) no-repeat
 }
 
 .avionics_switch_off {
     height: 51px;
     width: 14px;
     cursor: pointer;
-    background: url(/images/avionicsOff.2f30e452.jpg) no-repeat
+    background: url(../images/avionicsOff.2f30e452.jpg) no-repeat
 }
 
 #master_avionics2_switch {
@@ -964,7 +964,7 @@ g#rollover polygon {
 #switch_buttons {
     width: 220px;
     height: auto;
-    background-image: url(/images/switchesPanelBg.b94a65fc.jpg);
+    background-image: url(../images/switchesPanelBg.b94a65fc.jpg);
     background-repeat: no-repeat;
     overflow: hidden
 }
@@ -986,7 +986,7 @@ g#rollover polygon {
 #breaker_buttons {
     width: 565px;
     height: auto;
-    background-image: url(/images/breakerrPanelBg.157f99a8.jpg);
+    background-image: url(../images/breakerrPanelBg.157f99a8.jpg);
     background-repeat: no-repeat;
     overflow: hidden
 }
@@ -1001,13 +1001,13 @@ g#rollover polygon {
 .pulselite_off {
     width: 25px;
     height: 47px;
-    background-image: url(/images/pulseOff.3173f79a.png)
+    background-image: url(../images/pulseOff.3173f79a.png)
 }
 
 .pulselite_on {
     height: 40px;
     width: 27px;
-    background-image: url(/images/pulseOn.afc1078b.png);
+    background-image: url(../images/pulseOn.afc1078b.png);
     margin-top: -21px
 }
 
@@ -1162,7 +1162,7 @@ g#rollover polygon {
     cursor: pointer;
     height: 44px;
     width: 40px;
-    background-image: url(/images/5in.1060f831.png);
+    background-image: url(../images/5in.1060f831.png);
     background-repeat: no-repeat;
     padding-right: 7px
 }
@@ -1171,7 +1171,7 @@ g#rollover polygon {
     width: 40px;
     height: 44px;
     cursor: pointer;
-    background-image: url(/images/5out.58a95ad0.png);
+    background-image: url(../images/5out.58a95ad0.png);
     background-repeat: no-repeat;
     margin-left: 1px
 }
@@ -1180,7 +1180,7 @@ g#rollover polygon {
     cursor: pointer;
     height: 44px;
     width: 40px;
-    background-image: url(/images/10in.034e5472.png);
+    background-image: url(../images/10in.034e5472.png);
     background-repeat: no-repeat;
     padding-right: 7px
 }
@@ -1189,7 +1189,7 @@ g#rollover polygon {
     cursor: pointer;
     height: 44px;
     width: 40px;
-    background-image: url(/images/10out.8b04283c.png);
+    background-image: url(../images/10out.8b04283c.png);
     background-repeat: no-repeat;
     margin-top: 0;
     margin-left: -6px
@@ -1199,7 +1199,7 @@ g#rollover polygon {
     cursor: pointer;
     height: 44px;
     width: 40px;
-    background-image: url(/images/15in.ce262c08.png);
+    background-image: url(../images/15in.ce262c08.png);
     background-repeat: no-repeat;
     padding-right: 7px
 }
@@ -1208,7 +1208,7 @@ g#rollover polygon {
     cursor: pointer;
     height: 55px;
     width: 40px;
-    background-image: url(/images/15out.238988f4.png);
+    background-image: url(../images/15out.238988f4.png);
     background-repeat: no-repeat;
     margin-top: -7px;
     margin-left: -1px
@@ -1218,7 +1218,7 @@ g#rollover polygon {
     cursor: pointer;
     height: 44px;
     width: 40px;
-    background-image: url(/images/20in.539e597c.png);
+    background-image: url(../images/20in.539e597c.png);
     background-repeat: no-repeat;
     margin-left: -1px;
     padding-right: 7px
@@ -1228,7 +1228,7 @@ g#rollover polygon {
     cursor: pointer;
     height: 46px;
     width: 40px;
-    background-image: url(/images/20out.b9d20b56.png);
+    background-image: url(../images/20out.b9d20b56.png);
     background-repeat: no-repeat;
     margin-top: 0;
     margin-left: -4px
@@ -1244,7 +1244,7 @@ g#rollover polygon {
     height: 45px;
     width: 28px;
     cursor: pointer;
-    background: url(/images/whiteSwitchOff.c4c9fb9a.png) no-repeat;
+    background: url(../images/whiteSwitchOff.c4c9fb9a.png) no-repeat;
     margin-top: 10px
 }
 
@@ -1252,7 +1252,7 @@ g#rollover polygon {
     height: 45px;
     width: 28px;
     cursor: pointer;
-    background: url(/images/whiteSwitchOn.a17d8a59.png) no-repeat;
+    background: url(../images/whiteSwitchOn.a17d8a59.png) no-repeat;
     margin-top: 0
 }
 
@@ -1270,7 +1270,7 @@ g#rollover polygon {
     height: 30px;
     width: 31px;
     z-index: 0;
-    background-image: url(/images/stbyBattOff.f38789b5.png);
+    background-image: url(../images/stbyBattOff.f38789b5.png);
     background-repeat: no-repeat;
     margin-top: 23px;
     margin-right: 5px;
@@ -1282,7 +1282,7 @@ g#rollover polygon {
     height: 33px;
     width: 32px;
     z-index: 0;
-    background-image: url(/images/stbyBattArm.74f6b2ed.png);
+    background-image: url(../images/stbyBattArm.74f6b2ed.png);
     background-repeat: no-repeat;
     margin-top: 15px;
     margin-right: 5px;
@@ -1301,7 +1301,7 @@ div.standbybattery_arm:hover {
     height: 32px;
     width: 32px;
     z-index: 1;
-    background: url(/images/uparrow.92ba2b09.png) 9px 0 no-repeat;
+    background: url(../images/uparrow.92ba2b09.png) 9px 0 no-repeat;
     border-top: 2px solid #4bbea3;
     border-left: 2px solid #4bbea3;
     border-right: 2px solid #4bbea3;
@@ -1323,7 +1323,7 @@ div.standbybattery_test:hover {
     float: right;
     height: 32px;
     width: 32px;
-    background: url(/images/downarrow.153fa96b.png) 9px 10px no-repeat;
+    background: url(../images/downarrow.153fa96b.png) 9px 10px no-repeat;
     border-bottom: 2px solid #4bbea3;
     border-left: 2px solid #4bbea3;
     border-right: 2px solid #4bbea3;
@@ -1336,7 +1336,7 @@ div.standbybattery_test:hover {
     width: 31px;
     z-index: 0;
     float: right;
-    background: url(/images/stbyBattTest.1210f36f.png) no-repeat;
+    background: url(../images/stbyBattTest.1210f36f.png) no-repeat;
     margin-top: 23px;
     margin-right: 5px
 }
@@ -1344,7 +1344,7 @@ div.standbybattery_test:hover {
 .standby_test_led_on {
     height: 19px;
     width: 20px;
-    background: url(/images/testLightOn.9c3ca7dc.png) no-repeat;
+    background: url(../images/testLightOn.9c3ca7dc.png) no-repeat;
     position: absolute;
     top: 35px;
     left: 99px
@@ -1401,14 +1401,14 @@ circle,
 #switch_pitot_heat {
     width: 29px;
     height: 44px;
-    background: url(/images/greenSwitchOff.45354b95.png) no-repeat;
+    background: url(../images/greenSwitchOff.45354b95.png) no-repeat;
     margin-left: -1px
 }
 
 div#switch_pitot_heat.switch_open {
     width: 29px;
     height: 44px;
-    background: url(/images/greenSwitchOn.6c891819.png) no-repeat;
+    background: url(../images/greenSwitchOn.6c891819.png) no-repeat;
     margin-left: -1px
 }
 

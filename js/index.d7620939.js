@@ -1,6 +1,6 @@
 $(document).ready((function() {
     if (0 == (!!document.createElementNS && !!document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect)) throw $("#svgSupport").css("display", "block"), $("#header").css("display", "none"), $("#mainwrapper").css("display", "none"), Error("No Svg Support Found");
-    $("#svgwrapper").load("/images/ses.svg", (function() {
+    $("#svgwrapper").load("images/ses.svg", (function() {
         function e(e, a) {
             $(e).each((function(e, s) {
                 $(s).addClass(a)
@@ -101,9 +101,9 @@ $(document).ready((function() {
                 x2: 894.299
             }), $("#on_off_control line:eq(0), #on_off_control line:eq(1)").removeClass("no_power")
         }
-        $("#sparkplug").load("/images/sparkplug.svg", (function() {
+        $("#sparkplug").load("images/sparkplug.svg", (function() {
             $("#spark").css("display", "none")
-        })), $("#epuIconLeft").load("/images/epuIconLeft.svg"), $("#epuIconRight").load("/images/epuIconRight.svg"), $("#sound_wrapper").load("/images/soundIcon.svg", (function() {
+        })), $("#epuIconLeft").load("images/epuIconLeft.svg"), $("#epuIconRight").load("images/epuIconRight.svg"), $("#sound_wrapper").load("images/soundIcon.svg", (function() {
             $("#sound_icon_x").addClass("sound_on")
         }));
         var f = "#battery;#battery-relay line:eq(2);#battery_master;#sensewire;#relay_line;#eis_left;#elec_bus_bottom_bus;#elec_bus_top_bus;#x-feed-bus;#ess_diode_right_top;#ess_diode_right_bottom;#ess_bus g;#elec_bus_bottom g g:even;#elec_bus_top g g:even; #warn; #alt_field; #alt_master polyline; #elec_bus_top g.breaker;#avn_top g.breaker:first;#avn_top g;#avn_bottom g.breaker:first;#avn_bottom g;g.switch;#alt_master_wire;#power_in;#alternator_output;#alternator_relay line:eq(2);#alternator_relay_ground;#alternator_field;#alternator_ground;#ess_diode_bottom;#ess_diode_top;#xfeed_diode_top;#xfeed_diode_bottom".split(";"),
@@ -300,27 +300,27 @@ $(document).ready((function() {
         })), $("#mfd").toggle((function() {
             $("#mfd_electrical_info, #mfd").animate({
                 right: "+=220"
-            }, 1e3), $("#mfd_button").attr("src", "/images/arrow_right.png")
+            }, 1e3), $("#mfd_button").attr("src", "images/arrow_right.png")
         }), (function() {
             $("#mfd_electrical_info, #mfd").animate({
                 right: "-=220"
-            }, 1e3), $("#mfd_button").attr("src", "/images/arrow_left.png")
+            }, 1e3), $("#mfd_button").attr("src", "images/arrow_left.png")
         })), $("#pfd").toggle((function() {
             $("#pfd_info, #pfd").animate({
                 left: "+=220"
-            }, 1e3), $("#pfd_button").attr("src", "/images/arrow_left.png")
+            }, 1e3), $("#pfd_button").attr("src", "images/arrow_left.png")
         }), (function() {
             $("#pfd_info, #pfd").animate({
                 left: "-=220"
-            }, 1e3), $("#pfd_button").attr("src", "/images/arrow_right.png")
+            }, 1e3), $("#pfd_button").attr("src", "images/arrow_right.png")
         })), $("#header_menu").toggle((function() {
             $(".menu_container").animate({
                 top: "+=202"
-            }, 1e3), $("#menu_down").attr("src", "/images/button_menu_up.png")
+            }, 1e3), $("#menu_down").attr("src", "images/button_menu_up.png")
         }), (function() {
             $(".menu_container").animate({
                 top: "-=202"
-            }, 1e3), $("#menu_down").attr("src", "/images/button_menu_down.png")
+            }, 1e3), $("#menu_down").attr("src", "images/button_menu_down.png")
         })), $("#rollover_feeder_b").on("click", (function() {
             var e = $("g#feeder_b, #feeder_b_line, #elec_bus_top g, #avn_top g, #xfeed_wire_top_left, #xfeed_diode_top, #xfeed_diode_wire_top, #ess_diode_left_top, #ess_diode_top, #ess_diode_wire_top");
             $("g#feeder_b").hasClass("isClosed") ? e.addClass("feeder_open") : e.removeClass("feeder_open"), n("g#feeder_b line:eq(1)", "g#feeder_b line:eq(0)", "g#feeder_b path", "g#feeder_b")

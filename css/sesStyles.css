@@ -71,7 +71,7 @@ from #text_widget_buttons span to make them work again
 }
 
 body {
-    background-image: url("../images/elecbg.jpg");
+    background-image: url("..../images/elecbg.jpg");
     font-family: arial;
     margin: 0 auto;
     position: relative;
@@ -1041,7 +1041,7 @@ g#rollover polygon {
 }
 
 #master_buttons {
-    background: url(../images/masterPanelBg.jpg);
+    background: url(..../images/masterPanelBg.jpg);
     width: 181;
     height: 195px;
     background-repeat: no-repeat;
@@ -1051,7 +1051,7 @@ g#rollover polygon {
 /* Used to toggle styles in ses.js file */
 
 .master_switch_on {
-    background: url("../images/masterOn.jpg") no-repeat scroll 0 0 transparent;
+    background: url("..../images/masterOn.jpg") no-repeat scroll 0 0 transparent;
     height: 51px;
     width: 14px;
     cursor: pointer;
@@ -1060,7 +1060,7 @@ g#rollover polygon {
 /* Used to toggle styles in ses.js file */
 
 .master_switch_off {
-    background: url("../images/masterOff.jpg") no-repeat scroll 0 0 transparent;
+    background: url("..../images/masterOff.jpg") no-repeat scroll 0 0 transparent;
     height: 51px;
     width: 14px;
     cursor: pointer;
@@ -1069,7 +1069,7 @@ g#rollover polygon {
 /* Used to toggle styles in ses.js file */
 
 .avionics_switch_on {
-    background: url("../images/avionicsOn.jpg") no-repeat scroll 0 0 transparent;
+    background: url("..../images/avionicsOn.jpg") no-repeat scroll 0 0 transparent;
     height: 51px;
     width: 14px;
     cursor: pointer;
@@ -1078,7 +1078,7 @@ g#rollover polygon {
 /* Used to toggle styles in ses.js file */
 
 .avionics_switch_off {
-    background: url("../images/avionicsOff.jpg") no-repeat scroll 0 0 transparent;
+    background: url("..../images/avionicsOff.jpg") no-repeat scroll 0 0 transparent;
     height: 51px;
     width: 14px;
     cursor: pointer;
@@ -1110,7 +1110,7 @@ g#rollover polygon {
 
 #wrapper_master_switch {
     /* Blocked out because the empty switch image is contained in the main image
-  /*  background: url("../images/masterSwitchEmpty.png") repeat scroll 0 0 transparent;
+  /*  background: url("..../images/masterSwitchEmpty.png") repeat scroll 0 0 transparent;
     height: 78px;
     position: relative;
     width: 46px;
@@ -1136,7 +1136,7 @@ g#rollover polygon {
 }
 
 #switch_buttons {
-    background-image: url("../images/switchesPanelBg.jpg");
+    background-image: url("..../images/switchesPanelBg.jpg");
     width: 220px;
     height: auto;
     background-repeat: no-repeat;
@@ -1158,7 +1158,7 @@ g#rollover polygon {
 }
 
 #breaker_buttons {
-    background-image: url("../images/breakerrPanelBg.jpg");
+    background-image: url("..../images/breakerrPanelBg.jpg");
     width: 565px;
     height: auto;
     background-repeat: no-repeat;
@@ -1173,13 +1173,13 @@ g#rollover polygon {
 }
 
 .pulselite_off {
-    background-image: url("../images/pulseOff.png");
+    background-image: url("..../images/pulseOff.png");
     width: 25px;
     height: 47px;
 }
 
 .pulselite_on {
-    background-image: url("../images/pulseOn.png");
+    background-image: url("..../images/pulseOn.png");
     height: 40px;
     margin-top: -21px;
     width: 27px;
@@ -1347,7 +1347,7 @@ g#rollover polygon {
 /* Breakers and Switches Graphics */
 
 .breaker5 {
-    background-image: url("../images/5in.png");
+    background-image: url("..../images/5in.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 44px;
@@ -1356,7 +1356,7 @@ g#rollover polygon {
 }
 
 .breaker5_open {
-    background-image: url("../images/5out.png");
+    background-image: url("..../images/5out.png");
     width: 40px;
     height: 44px;
     background-repeat: no-repeat;
@@ -1365,7 +1365,7 @@ g#rollover polygon {
 }
 
 .breaker10 {
-    background-image: url("../images/10in.png");
+    background-image: url("..../images/10in.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 44px;
@@ -1374,7 +1374,7 @@ g#rollover polygon {
 }
 
 .breaker10_open {
-    background-image: url("../images/10out.png");
+    background-image: url("..../images/10out.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 44px;
@@ -1384,7 +1384,7 @@ g#rollover polygon {
 }
 
 .breaker15 {
-    background-image: url("../images/15in.png");
+    background-image: url("..../images/15in.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 44px;
@@ -1393,7 +1393,7 @@ g#rollover polygon {
 }
 
 .breaker15_open {
-    background-image: url("../images/15out.png");
+    background-image: url("..../images/15out.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 55px;
@@ -1403,7 +1403,7 @@ g#rollover polygon {
 }
 
 .breaker20 {
-    background-image: url("../images/20in.png");
+    background-image: url("..../images/20in.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 44px;
@@ -1413,7 +1413,7 @@ g#rollover polygon {
 }
 
 .breaker20_open {
-    background-image: url("../images/20out.png");
+    background-image: url("..../images/20out.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 46px;
@@ -1429,7 +1429,7 @@ g#rollover polygon {
 }
 
 .switch {
-    background: url("../images/whiteSwitchOff.png") no-repeat scroll 0 0 transparent;
+    background: url("..../images/whiteSwitchOff.png") no-repeat scroll 0 0 transparent;
     height: 45px;
     width: 28px;
     margin-top: 10px;
@@ -1437,7 +1437,7 @@ g#rollover polygon {
 }
 
 .switch_open {
-    background: url("../images/whiteSwitchOn.png") no-repeat scroll 0 0 transparent;
+    background: url("..../images/whiteSwitchOn.png") no-repeat scroll 0 0 transparent;
     height: 45px;
     width: 28px;
     margin-top: 0px;
@@ -1454,7 +1454,7 @@ g#rollover polygon {
 }
 
 .standbybattery {
-    background-image: url("../images/stbyBattOff.png");
+    background-image: url("..../images/stbyBattOff.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 30px;
@@ -1466,7 +1466,7 @@ g#rollover polygon {
 }
 
 .standbybattery_armed {
-    background-image: url("../images/stbyBattArm.png");
+    background-image: url("..../images/stbyBattArm.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 33px;
@@ -1484,7 +1484,7 @@ div.standbybattery_arm {
 }
 
 div.standbybattery_arm:hover {
-    background: url("../images/uparrow.png") no-repeat scroll 9px 0 transparent;
+    background: url("..../images/uparrow.png") no-repeat scroll 9px 0 transparent;
     border-left: 2px solid #4BBEA3;
     border-radius: 5px 5px 5px 5px;
     border-right: 2px solid #4BBEA3;
@@ -1507,7 +1507,7 @@ div.standbybattery_test {
 }
 
 div.standbybattery_test:hover {
-    background: url("../images/downarrow.png") no-repeat scroll 9px 10px transparent;
+    background: url("..../images/downarrow.png") no-repeat scroll 9px 10px transparent;
     border-bottom: 2px solid #4BBEA3;
     border-left: 2px solid #4BBEA3;
     border-radius: 5px 5px 5px 5px;
@@ -1520,7 +1520,7 @@ div.standbybattery_test:hover {
 }
 
 .standbybattery_testing {
-    background: url("../images/stbyBattTest.png") no-repeat scroll 0 0 transparent;
+    background: url("..../images/stbyBattTest.png") no-repeat scroll 0 0 transparent;
     height: 41px;
     margin-right: 5px;
     margin-top: 23px;
@@ -1530,7 +1530,7 @@ div.standbybattery_test:hover {
 }
 
 .standby_test_led_on {
-    background: url("../images/testLightOn.png") no-repeat scroll 0 0 transparent;
+    background: url("..../images/testLightOn.png") no-repeat scroll 0 0 transparent;
     height: 19px;
     left: 99px;
     position: absolute;
@@ -1628,7 +1628,7 @@ circle {
 }
 
 #switch_pitot_heat {
-    background: url(../images/greenSwitchOff.png);
+    background: url(..../images/greenSwitchOff.png);
     width: 29px;
     height: 44px;
     background-repeat: no-repeat;
@@ -1636,7 +1636,7 @@ circle {
 }
 
 div#switch_pitot_heat.switch_open {
-    background: url(../images/greenSwitchOn.png);
+    background: url(..../images/greenSwitchOn.png);
     width: 29px;
     height: 44px;
     background-repeat: no-repeat;
