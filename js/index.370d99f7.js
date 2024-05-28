@@ -1,4 +1,5 @@
 //File này được sử để tạo các hộp thoại cho các thiết bị trong mạng lưới điện
+//Có thể dùng để quản lý các tình trạng sự cố hoặc cảnh báo, như xử lý các cảnh báo về điện áp thấp hoặc nhiệt độ quá cao.
 
 $(document).ready((function() {
     $.fx.speeds._default = 500, // Đặt tốc độ mặc định cho các hiệu ứng jQuery là 500ms
