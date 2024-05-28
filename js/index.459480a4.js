@@ -1,35 +1,42 @@
+// File này có tác dụng xử lý vị trí của các phần tử trên trang web
+// File này có thể alf chức năng phụ trợ, bao gồm việc tải dữ liệu từ máy chủ, xử lý lỗi, hoặc cập nhật dữ liệu realtime từ máy bay
+
 ! function(t) {
-    t.ui = t.ui || {};
-    var e = /left|center|right/,
-        o = "center",
-        i = /top|center|bottom/,
-        f = "center",
-        n = t.fn.position;
+    t.ui = t.ui || {}; // Đảm bảo rằng t.ui được khởi tạo
+    var e = /left|center|right/, // Biểu thức chính quy để kiểm tra các giá trị 'left', 'center', 'right'
+        o = "center", // Giá trị mặc định cho vị trí ngang
+        i = /top|center|bottom/, // Biểu thức chính quy để kiểm tra các giá trị 'top', 'center', 'bottom'
+        f = "center", // Giá trị mặc định cho vị trí dọc
+        n = t.fn.position; // Lưu trữ hàm position gốc của jQuery
     if (t.fn.position = function(s) {
-            if (!s || !s.of) return n.apply(this, arguments);
-            s = t.extend({}, s);
-            var l, r, a, h = t(s.of),
-                c = (s.collision || "flip").split(" "),
-                p = s.offset ? s.offset.split(" ") : [0, 0];
+            if (!s || !s.of) return n.apply(this, arguments); // Nếu không có đối số 'of', gọi hàm position gốc
+            s = t.extend({}, s); // Sao chép đối số 's' để không ảnh hưởng đến đối số gốc
+            var l, r, a, h = t(s.of), // Lấy phần tử mục tiêu từ đối số 'of'
+                c = (s.collision || "flip").split(" "), // Lấy chế độ xử lý va chạm từ đối số 'collision'
+                p = s.offset ? s.offset.split(" ") : [0, 0]; // Lấy giá trị offset từ đối số 'offset'
+            // Tính toán kích thước và vị trí của phần tử mục tiêu dựa trên đối số 'of'
             switch (9 === s.of.nodeType ? (l = h.width(), r = h.height(), a = {
-                top: 0,
+                top: 0, // Nếu 'of' là cửa sổ, thiết lập vị trí top và left là 0
                 left: 0
-            }) : s.of.scrollTo && s.of.document ? (l = h.width(), r = h.height(), a = {
-                top: h.scrollTop(),
+            }) : s.of.scrollTo && s.of.document ? (l = h.width(), r = h.height(), a = { // Nếu 'of' là một tài liệu
+                top: h.scrollTop(), // Lấy vị trí cuộn dọc và ngang của tài liệu
                 left: h.scrollLeft()
-            }) : s.of.preventDefault ? (s.at = "left top", l = r = 0, a = {
-                top: s.of.pageY,
+            }) : s.of.preventDefault ? (s.at = "left top", l = r = 0, a = { // Nếu 'of' là một sự kiện
+                top: s.of.pageY, // Lấy vị trí top và left của sự kiện
                 left: s.of.pageX
-            }) : (l = h.outerWidth(), r = h.outerHeight(), a = h.offset()), t.each(["my", "at"], (function() {
-                var t = (s[this] || "").split(" ");
+            }) : (l = h.outerWidth(), r = h.outerHeight(), a = h.offset()), t.each(["my", "at"], (function() { // Duyệt qua mảng ['my', 'at']
+                var t = (s[this] || "").split(" "); // Tách chuỗi thành mảng
+                // Nếu mảng chỉ có 1 phần tử, thêm giá trị mặc định vào mảng
                 (t = 1 == t.length ? e.test(t[0]) ? t.concat([f]) : i.test(t[0]) ? [o].concat(t) : [o, f] : t)[0] = e.test(t[0]) ? t[0] : o, t[1] = i.test(t[1]) ? t[1] : f, s[this] = t
             })), 1 == c.length && (c[1] = c[0]), p[0] = parseInt(p[0], 10) || 0, 1 == p.length && (p[1] = p[0]), p[1] = parseInt(p[1], 10) || 0, s.at[0]) {
+                // Nếu giá trị 'at' theo chiều ngang là 'center', thiết lập vị trí left của phần tử mục tiêu
                 case "right":
                     a.left += l;
                     break;
                 case o:
                     a.left += l / 2
             }
+            // Nếu giá trị 'at' theo chiều dọc là 'center', thiết lập vị trí top của phần tử mục tiêu
             switch (s.at[1]) {
                 case "bottom":
                     a.top += r;
@@ -37,26 +44,34 @@
                 case f:
                     a.top += r / 2
             }
+            // Duyệt qua mảng ['left', 'top'] để xử lý vị trí của phần tử
             return a.left += p[0], a.top += p[1], this.each((function() {
+                // Xử lý va chạm
                 var e = t(this),
                     i = e.outerWidth(),
                     n = e.outerHeight(),
                     h = t.extend({}, a);
+                // Xử lý va chạm
                 switch (s.my[0]) {
+                    // Nếu giá trị 'my' theo chiều ngang là 'right', giảm vị trí left của phần tử
                     case "right":
                         h.left -= i;
                         break;
                     case o:
                         h.left -= i / 2
                 }
+                // Xử lý va chạm
                 switch (s.my[1]) {
+                    // Nếu giá trị 'my' theo chiều dọc là 'bottom', giảm vị trí top của phần tử
                     case "bottom":
                         h.top -= n;
                         break;
                     case f:
                         h.top -= n / 2
                 }
+                // Xử lý va chạm
                 t.each(["left", "top"], (function(e, o) {
+                    // Nếu có hàm xử lý va chạm, gọi hàm đó, ngược lại, gọi hàm mặc định
                     t.ui.position[c[e]] && t.ui.position[c[e]][o](h, {
                         targetWidth: l,
                         targetHeight: r,
@@ -66,11 +81,15 @@
                         my: s.my,
                         at: s.at
                     })
-                })), t.fn.bgiframe && e.bgiframe(), e.offset(t.extend(h, {
+                })), 
+                // Xử lý va chạm
+                t.fn.bgiframe && e.bgiframe(), e.offset(t.extend(h, {
                     using: s.using
                 }))
             }))
-        }, t.ui.position = {
+        }, 
+        // Xử lý va chạm
+        t.ui.position = {
             fit: {
                 left: function(e, o) {
                     var i = e.left + o.elemWidth - t(window).width() - t(window).scrollLeft();

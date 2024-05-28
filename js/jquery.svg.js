@@ -1,3 +1,5 @@
+//ThÆ° viá»‡n jquery há»— trá»£
+
 /* http://keith-wood.name/svg.html
 SVG for jQuery v1.4.5.
 Written by Keith Wood (kbwood{at}iinet.com.au) August 2007.
@@ -1209,7 +1211,7 @@ Please attribute the author if you use it. */
             this._path += (relative ? 'v' : 'V') + (isArray(y) ? y.join(' ') : y);
             return this;
         },
-        /* Draw a cubic Bézier curve.
+        /* Draw a cubic Bï¿½zier curve.
         @param x1 (number) x-coordinate of beginning control point or
         (number[][]) x-/y-coordinates of control and end points to draw to
         @param y1 (number) y-coordinate of beginning control point (omitted if x1 is array)
@@ -1224,7 +1226,7 @@ Please attribute the author if you use it. */
             relative = (isArray(x1) ? y1 : relative);
             return this._coords((relative ? 'c' : 'C'), x1, y1, x2, y2, x, y);
         },
-        /* Continue a cubic Bézier curve.
+        /* Continue a cubic Bï¿½zier curve.
         Starting control point is the reflection of the previous end control point.
         @param x2 (number) x-coordinate of ending control point or
         (number[][]) x-/y-coordinates of control and end points to draw to
@@ -1238,7 +1240,7 @@ Please attribute the author if you use it. */
             relative = (isArray(x2) ? y2 : relative);
             return this._coords((relative ? 's' : 'S'), x2, y2, x, y);
         },
-        /* Draw a quadratic Bézier curve.
+        /* Draw a quadratic Bï¿½zier curve.
         @param x1 (number) x-coordinate of control point or
         (number[][]) x-/y-coordinates of control and end points to draw to
         @param y1 (number) y-coordinate of control point (omitted if x1 is array)
@@ -1251,7 +1253,7 @@ Please attribute the author if you use it. */
             relative = (isArray(x1) ? y1 : relative);
             return this._coords((relative ? 'q' : 'Q'), x1, y1, x, y);
         },
-        /* Continue a quadratic Bézier curve.
+        /* Continue a quadratic Bï¿½zier curve.
         Control point is the reflection of the previous control point.
         @param x (number) x-coordinate of curve end or
         (number[][]) x-/y-coordinates of points to draw to

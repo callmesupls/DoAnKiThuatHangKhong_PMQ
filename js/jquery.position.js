@@ -1,3 +1,5 @@
+//Thư viện jquery hỗ trợ
+
 /*
  * jQuery UI Position @VERSION
  *

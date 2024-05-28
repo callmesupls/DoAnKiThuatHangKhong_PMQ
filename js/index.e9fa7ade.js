@@ -1,3 +1,6 @@
+//File này xử lý việc tạo và quản lý các hộp thoại (dialog)
+//File này để kiểm tra và xử lý dữ liệu liên quan đến hệ thống điện trên máy bay, bao gồm việc kiểm tra trạng thái của các linh kiện và báo cáo lỗi.
+
 /*! jQuery UI - v1.8.23 - 2012-08-15
  * https://github.com/jquery/jquery-ui
  * Includes: jquery.ui.core.js

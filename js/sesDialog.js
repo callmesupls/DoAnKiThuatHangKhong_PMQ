@@ -1,3 +1,5 @@
+//File trong test.html, không có trong index.html
+
 $(document).ready(function() {
 
     $.fx.speeds._default = 500;

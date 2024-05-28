@@ -1,3 +1,6 @@
+//Thư viện jquery hỗ trợ
+
+
 /*!
  * jQuery UI Touch Punch 0.2.2
  *

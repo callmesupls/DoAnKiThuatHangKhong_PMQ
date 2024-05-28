@@ -1,3 +1,5 @@
+//Thư viện jquery hỗ trợ
+
 /* http://keith-wood.name/svg.html
 jQuery DOM compatibility for jQuery SVG v1.4.5.
 Written by Keith Wood (kbwood{at}iinet.com.au) April 2009.

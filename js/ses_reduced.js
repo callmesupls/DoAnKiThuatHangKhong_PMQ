@@ -1,3 +1,5 @@
+//File trong test.html, không có trong index.html
+
 $(document).ready(function() {
     if (!1 == (!!document.createElementNS && !!document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect)) throw $("#svgSupport").css("display", "block"), $("#header").css("display", "none"), $("#mainwrapper").css("display", "none"), Error("No Svg Support Found");
     $("#svgwrapper").load("images/ses.svg", function() {

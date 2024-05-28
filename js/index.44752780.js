@@ -1,21 +1,27 @@
+//File này hỗ trợ tốt hơn cho các phần tử SVG, để tương tác với các phần tử SVG trên trang web
+//File này để mô phỏng hoặc điều khiển các thiết bị điện trên máy bay, như đèn, máy phát điện, hoặc bộ sạc.
+
 ! function(e) {
     var t, s, a, r, i, n, l, c, u, f, m, o;
 
-    function p(t) {
+    function p(t) { // Hàm kiểm tra xem một phần tử có phải là phần tử SVG hay không
         for (var s = 0; s < t.length; s++)
             if (1 == t[s].nodeType && t[s].namespaceURI == e.svg.svgNS) return !0;
         return !1
     }
-    e.fn.addClass = (t = e.fn.addClass, function(s) {
+    e.fn.addClass = (t = e.fn.addClass, function(s) { // Ghi đè hàm addClass của jQuery
         return s = s || "", this.each((function() {
-            if (e.svg.isSVGElem(this)) {
+            if (e.svg.isSVGElem(this)) { // Kiểm tra xem phần tử có phải là SVG hay không
                 var a = this;
-                e.each(s.split(/\s+/), (function(t, s) {
-                    var r = a.className ? a.className.baseVal : a.getAttribute("class"); - 1 == e.inArray(s, r.split(/\s+/)) && (r += (r ? " " : "") + s, a.className ? a.className.baseVal = r : a.setAttribute("class", r))
+                e.each(s.split(/\s+/), (function(t, s) { // Duyệt qua từng lớp trong chuỗi 's'
+                    var r = a.className ? a.className.baseVal : a.getAttribute("class"); // Lấy tên lớp hiện tại của phần tử
+                     - 1 == e.inArray(s, r.split(/\s+/)) && (r += (r ? " " : "") + s, a.className ? a.className.baseVal = r : a.setAttribute("class", r)) // Thêm lớp vào phần tử nếu nó chưa có
                 }))
-            } else t.apply(e(this), [s])
+            } else t.apply(e(this), [s]) // Nếu không phải SVG, gọi hàm addClass gốc của jQuery
         }))
-    }), e.fn.removeClass = (s = e.fn.removeClass, function(t) {
+    }), 
+    // Tương tự như trên cho các hàm removeClass, toggleClass, hasClass, attr, removeAttr
+    e.fn.removeClass = (s = e.fn.removeClass, function(t) {
         return t = t || "", this.each((function() {
             if (e.svg.isSVGElem(this)) {
                 var a = this;
@@ -27,11 +33,15 @@
                 }))
             } else s.apply(e(this), [t])
         }))
-    }), e.fn.toggleClass = (a = e.fn.toggleClass, function(t, s) {
+    }), 
+    
+    e.fn.toggleClass = (a = e.fn.toggleClass, function(t, s) {
         return this.each((function() {
             e.svg.isSVGElem(this) ? ("boolean" != typeof s && (s = !e(this).hasClass(t)), e(this)[(s ? "add" : "remove") + "Class"](t)) : a.apply(e(this), [t, s])
         }))
-    }), e.fn.hasClass = (r = e.fn.hasClass, function(t) {
+    }), 
+    
+    e.fn.hasClass = (r = e.fn.hasClass, function(t) {
         t = t || "";
         var s = !1;
         return this.each((function() {
@@ -41,7 +51,9 @@
             } else s = r.apply(e(this), [t]);
             return !s
         })), s
-    }), e.fn.attr = (i = e.fn.attr, function(t, s, a) {
+    }), 
+    
+    e.fn.attr = (i = e.fn.attr, function(t, s, a) {
         if ("string" == typeof t && void 0 === s) {
             var r = i.apply(this, [t]);
             if (r && r.baseVal && null != r.baseVal.numberOfItems)
@@ -80,26 +92,43 @@
                     a ? this.style[r] = n : this.setAttribute(r, n)
                 } else i.apply(e(this), [t, s, a])
         }))
-    }), e.fn.removeAttr = (n = e.fn.removeAttr, function(t) {
+    }), 
+    
+    e.fn.removeAttr = (n = e.fn.removeAttr, function(t) {
         return this.each((function() {
             e.svg.isSVGElem(this) ? this[t] && this[t].baseVal ? this[t].baseVal.value = "" : this.setAttribute(t, "") : n.apply(e(this), [t])
         }))
-    }), e.extend(e.cssNumber, {
+    }), 
+    
+    e.extend(e.cssNumber, {
         stopOpacity: !0,
         strokeMitrelimit: !0,
         strokeOpacity: !0
-    }), e.cssProps && (e.css = (l = e.css, function(t, s, a) {
+    }), 
+    
+    e.cssProps && (e.css = (l = e.css, function(t, s, a) {
         return (s.match(/^svg.*/) ? e(t).attr(e.cssProps[s] || s) : "") || l(t, s, a)
-    })), e.expr.relative["+"] = (c = e.expr.relative["+"], function(e, t, s) {
-        c(e, t, s || p(e))
-    }), e.expr.relative[">"] = (u = e.expr.relative[">"], function(e, t, s) {
+    })), 
+    
+    e.expr.relative["+"] = (c = e.expr.relative["+"], function(e, t, s) {
+        c(e, t, s || p(e)) // Ghi đè hàm relative của jQuery để hỗ trợ SVG
+    }), 
+    
+    // Tương tự như trên cho các hàm relative khác
+    e.expr.relative[">"] = (u = e.expr.relative[">"], function(e, t, s) {
         u(e, t, s || p(e))
-    }), e.expr.relative[""] = (f = e.expr.relative[""], function(e, t, s) {
+    }), 
+    
+    e.expr.relative[""] = (f = e.expr.relative[""], function(e, t, s) {
         f(e, t, s || p(e))
-    }), e.expr.relative["~"] = (m = e.expr.relative["~"], function(e, t, s) {
+    }), 
+    
+    e.expr.relative["~"] = (m = e.expr.relative["~"], function(e, t, s) {
         m(e, t, s || p(e))
-    }), e.expr.find.ID = (o = e.expr.find.ID, function(t, s, a) {
-        return e.svg.isSVGElem(s) ? [s.ownerDocument.getElementById(t[1])] : o(t, s, a)
+    }), 
+    
+    e.expr.find.ID = (o = e.expr.find.ID, function(t, s, a) {
+        return e.svg.isSVGElem(s) ? [s.ownerDocument.getElementById(t[1])] : o(t, s, a) // Ghi đè hàm find.ID của jQuery để hỗ trợ SVG
     });
     var v, h = document.createElement("div");
     h.appendChild(document.createComment("")), h.getElementsByTagName("*").length > 0 && (e.expr.find.TAG = function(e, t) {

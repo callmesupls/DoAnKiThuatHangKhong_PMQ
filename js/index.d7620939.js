@@ -1,3 +1,5 @@
+//File này để thực hiện các phép tính hoặc tính toán liên quan đến hệ thống điện trên máy bay.
+
 $(document).ready((function() {
     if (0 == (!!document.createElementNS && !!document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect)) throw $("#svgSupport").css("display", "block"), $("#header").css("display", "none"), $("#mainwrapper").css("display", "none"), Error("No Svg Support Found");
     $("#svgwrapper").load("images/ses.svg", (function() {
